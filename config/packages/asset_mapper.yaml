@@ -2,7 +2,8 @@ framework:
     asset_mapper:
         # The paths to make available to the asset mapper.
         paths:
-            - assets/
+            assets/: ''
+            vendor/symfony/ux-turbo/assets/: '@symfony/ux-turbo'
         missing_import_mode: strict
 
 when@prod:
